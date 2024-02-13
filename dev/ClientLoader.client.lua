@@ -47,7 +47,7 @@ RunService.RenderStepped:Connect(function(dt)
         ImOverlay:End()
         ImOverlay:End()
     else
-        ImOverlay:Text("Tests completed")
+        ImOverlay:Text("Tests completed, restarting")
     end
 
     ImOverlay:Render()
@@ -57,7 +57,10 @@ while task.wait(TimeBetweenTest) do
     if Tests[TestIndex + 1] then
         TestIndex += 1
         ActiveTest = Tests[TestIndex]
-    else
+    elseif ActiveTest and not Tests[TestIndex + 1] then
         ActiveTest = nil
+    else
+        TestIndex = 1
+        ActiveTest = Tests[TestIndex]
     end
 end
