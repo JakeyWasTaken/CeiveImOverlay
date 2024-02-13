@@ -12,6 +12,41 @@ local Font = Font.new("rbxasset://fonts/families/PressStart2P.json")
 
 --- @class ImOverlay
 
+--- @within ImOverlay
+--- @prop DefaultY number
+
+--- @within ImOverlay
+--- @prop TextSize number
+
+--- @within ImOverlay
+--- @prop BackFrame Frame
+
+--- @within ImOverlay
+--- @prop ListLayout UIListLayout
+
+--- @within ImOverlay
+--- @prop DidUpdate boolean
+
+--- @within ImOverlay
+--- @private
+--- @prop m_Indent number
+
+--- @within ImOverlay
+--- @private
+--- @prop m_State string
+
+--- @within ImOverlay
+--- @private
+--- @prop m_PreviousState string
+
+--- @within ImOverlay
+--- @private
+--- @prop m_RenderGroup table
+
+--- @within ImOverlay
+--- @private
+--- @prop m_Pool table
+
 local ImOverlay = {}
 ImOverlay.__index = ImOverlay
 

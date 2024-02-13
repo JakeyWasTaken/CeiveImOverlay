@@ -35,21 +35,20 @@ RunService.RenderStepped:Connect(function(dt)
         DeltaTime = dt
     }
 
-    -- if ActiveTest then
-    --     ImOverlay:Begin("Running Tests")
-    --     ImOverlay:Text(`Time Between Test: {TimeBetweenTest}s`)
-    --     ImOverlay:Text(`Current Test: {ActiveTest[1]}`)
-    --     ImOverlay:Text(`Next Test: {Tests[TestIndex + 1] and Tests[TestIndex + 1][1] or "None"}`)
-    --     ImOverlay:Begin("Test Container")
+    if ActiveTest then
+        ImOverlay:Begin("Running Tests")
+        ImOverlay:Text(`Time Between Test: {TimeBetweenTest}s`)
+        ImOverlay:Text(`Current Test: {ActiveTest[1]}`)
+        ImOverlay:Text(`Next Test: {Tests[TestIndex + 1] and Tests[TestIndex + 1][1] or "None"}`)
+        ImOverlay:Begin("Test Container")
 
-    --     ActiveTest[2](ImOverlay, State)
+        ActiveTest[2](ImOverlay, State)
 
-    --     ImOverlay:End()
-    --     ImOverlay:End()
-    -- else
-    --     ImOverlay:Text("Tests completed")
-    -- end
-    ImOverlay:Text("Hello World!")
+        ImOverlay:End()
+        ImOverlay:End()
+    else
+        ImOverlay:Text("Tests completed")
+    end
 
     ImOverlay:Render()
 end)
