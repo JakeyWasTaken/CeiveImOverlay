@@ -1,0 +1,21 @@
+{
+    "name": "Ceive-ImOverlay",
+    "tree": {
+      "$className": "DataModel",
+
+      "ReplicatedStorage": {
+        "$path": "src"
+      },
+
+      "StarterPlayer": {
+        "StarterPlayerScripts": {
+            "dev": {
+                "$path": "dev"
+            },
+            "Tests": {
+                "$path": "tests"
+            }
+        }
+      }
+    }
+}
