@@ -1,5 +1,19 @@
 local GuiService = game:GetService("GuiService")
 
+export type ImOverlay = {
+    DefaultY: number,
+    TextSize: number,
+    BackFrame: Frame,
+    ListLayout: UIListLayout,
+    DidUpdate: boolean
+
+    Begin: (self: ImOverlay, Text: string, BackgroundColor: Color3?, TextColor: Color3?) -> (),
+    End: (self: ImOverlay) -> (),
+    Text: (self: ImOverlay, Text: string, BackgroundColor: Color3?, TextColor: Color3?) -> (),
+    Render: (self: ImOverlay) -> (),
+    Destroy: (self: ImOverlay) -> ()
+}
+
 local Font = Font.new("rbxasset://fonts/families/PressStart2P.json")
 
 --- @class ImOverlay
@@ -41,14 +55,6 @@ local Font = Font.new("rbxasset://fonts/families/PressStart2P.json")
 
 local ImOverlay = {}
 ImOverlay.__index = ImOverlay
-
-export type ImOverlay = {
-    DefaultY: number,
-    TextSize: number,
-    BackFrame: Frame,
-    ListLayout: UIListLayout,
-    DidUpdate: boolean
-} & typeof(ImOverlay)
 
 --- @within ImOverlay
 --- @function new
