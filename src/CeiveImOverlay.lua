@@ -58,11 +58,12 @@ ImOverlay.__index = ImOverlay
 
 --- @within ImOverlay
 --- @function new
+--- @param FrameParent ScreenGui
 --- @param DefaultY number?
 --- @param TextSize number?
 --- @param UseInset number?
 --- Creates a new overlay object
-function ImOverlay.new(DefaultY: number?, TextSize: number?, UseInset: boolean?): ImOverlay
+function ImOverlay.new(FrameParent: ScreenGui, DefaultY: number?, TextSize: number?, UseInset: boolean?): ImOverlay
     DefaultY = DefaultY or 5
     TextSize = TextSize or 11
     UseInset = (UseInset == nil and true or UseInset)
@@ -84,6 +85,7 @@ function ImOverlay.new(DefaultY: number?, TextSize: number?, UseInset: boolean?)
 	self.BackFrame.Size = (UseInset and InsetSize or DefaultSize)
 	self.BackFrame.Name = "BackFrame"
 	self.BackFrame.Transparency = 1
+	self.BackFrame.Parent = FrameParent
 
 	self.ListLayout = Instance.new("UIListLayout")
 	self.ListLayout.Padding = UDim.new(0, 2)
