@@ -8,9 +8,7 @@ A basic integration of CeiveImOverlay would be as follows:
 ```lua
 local RunService = game:GetService("RunService")
 local CeiveImOverlay = require(...)
-local ImOverlay = CeiveImOverlay.new()
-
-ImOverlay.BackFrame.Parent = AScreenGui
+local ImOverlay = CeiveImOverlay.new(AScreenGui)
 
 -- Could be heartbeat or render stepped, doesnt really matter.
 RunService.RenderStepped:Connect(function()
@@ -29,9 +27,7 @@ A more complex integration could look something like this:
 ```lua
 local RunService = game:GetService("RunService")
 local CeiveImOverlay = require(...)
-local ImOverlay = CeiveImOverlay.new()
-
-ImOverlay.BackFrame.Parent = AScreenGui
+local ImOverlay = CeiveImOverlay.new(AScreenGui)
 
 -- Could be heartbeat or render stepped, doesnt really matter.
 RunService.RenderStepped:Connect(function()
