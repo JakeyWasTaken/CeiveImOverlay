@@ -58,12 +58,12 @@ ImOverlay.__index = ImOverlay
 
 --- @within ImOverlay
 --- @function new
---- @param FrameParent ScreenGui
+--- @param FrameParent LayerCollector
 --- @param DefaultY number?
 --- @param TextSize number?
 --- @param UseInset number?
 --- Creates a new overlay object
-function ImOverlay.new(FrameParent: ScreenGui, DefaultY: number?, TextSize: number?, UseInset: boolean?): ImOverlay
+function ImOverlay.new(FrameParent: LayerCollector, DefaultY: number?, TextSize: number?, UseInset: boolean?): ImOverlay
     DefaultY = DefaultY or 5
     TextSize = TextSize or 11
     UseInset = (UseInset == nil and true or UseInset)
