@@ -47,8 +47,14 @@ export type ImOverlay = {
 	TextSize: number,
 	BackFrame: Frame,
 	ListLayout: UIListLayout,
-	DidUpdate: boolean
-} & typeof(ImOverlay)
+	DidUpdate: boolean,
+
+	Begin: (self: ImOverlay, Text: string, BackgroundColor: Color3?, TextColor: Color3?) -> (),
+	End: (self: ImOverlay) -> (),
+	Text: (self: ImOverlay, Text: string, BackgroundColor: Color3?, TextColor: Color3?) -> (),
+	Render: (self: ImOverlay) -> (),
+	Destroy: (self: ImOverlay) -> ()
+}
 
 --- @within ImOverlay
 --- @function new
