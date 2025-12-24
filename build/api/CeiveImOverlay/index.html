@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="plugin-moonwave plugin-id-moonwave" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">CeiveImOverlay | CeiveImOverlay</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://JakeyWasTaken.github.io/CeiveImOverlay/api/CeiveImOverlay"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="CeiveImOverlay | CeiveImOverlay"><link data-rh="true" rel="canonical" href="https://JakeyWasTaken.github.io/CeiveImOverlay/api/CeiveImOverlay"><link data-rh="true" rel="alternate" href="https://JakeyWasTaken.github.io/CeiveImOverlay/api/CeiveImOverlay" hreflang="en"><link data-rh="true" rel="alternate" href="https://JakeyWasTaken.github.io/CeiveImOverlay/api/CeiveImOverlay" hreflang="x-default"><link rel="stylesheet" href="/CeiveImOverlay/assets/css/styles.7a4bdbad.css">
+<script src="/CeiveImOverlay/assets/js/runtime~main.7bba73c0.js" defer="defer"></script>
+<script src="/CeiveImOverlay/assets/js/main.29a17004.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CeiveImOverlay/"><b class="navbar__title text--truncate">CeiveImOverlay</b></a><a class="navbar__item navbar__link" href="/CeiveImOverlay/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CeiveImOverlay/api/">API</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/JakeyWasTaken/CeiveImOverlay" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0 docPageContainer_wNNk"><div class="docPage_Dpn1"><div class="docSidebarContainer_o_re"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/CeiveImOverlay/api/CeiveImOverlay">​Ceive​Im​Overlay</a></li></ul></nav></div></div><main class="docMainContainer_HJE1"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_MU3C"><div class="docItemContainer_Wv98"><article><div class="member_J0w1 markdown"><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_oUs_"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><header><h1 class="docTitle_mZRt" style="text-decoration:none"><span style="display:inline-block">Ceive</span><span style="display:inline-block">Im</span><span style="display:inline-block">Overlay</span></h1><div class="luaClassTags_EipM"></div><label class="privateToggle_lmfE"><span class="privateCheckboxContainer_psRa"><input class="privateCheckboxInternal_IKP2" type="checkbox" name="checkbox"><span class="privateCheckboxControl_Ov8U"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="3" d="M4 11.91l5.37 5.37L19.79 5.59"></path></svg></span></span><span class="privateCheckboxLabel_Vmvs">Show Private</span></label><div></div></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="types">Types<a href="#types" class="hash-link" aria-label="Direct link to Types" title="Direct link to Types">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Layer"><code style="text-decoration:none">Layer</code><a href="#Layer" class="hash-link" aria-label="Direct link to Layer" title="Direct link to Layer">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L17"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>Layer<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>Id<!-- -->: </code><code class="blue_P4bS">string</code><span class="inlineDescription_G7Er">-- <span>
+<p>The unique Id for this layer</p>
+</span></span></div><div><code>Position<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/UDim2" target="_blank" rel="noopener noreferrer">UDim2<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><span class="inlineDescription_G7Er">-- <span>
+<p>The position this layer will be drawn at, relative to the BackFrame</p>
+</span></span></div><div><code>CurrentIndentation<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
+<p>A number tracking the current indentation level of this layer, reset after each render pass</p>
+</span></span></div><div><code>RenderGroup<!-- -->: </code><code class="purple_ieR2">{</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/CeiveImOverlay/api/CeiveImOverlay#Element">Element</a></code><code class="purple_ieR2">}</code><span class="inlineDescription_G7Er">-- <span>
+<p>Array of elements which should be drawn in the render pass</p>
+</span></span></div></div><code>}</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Style"><code style="text-decoration:none">Style</code><a href="#Style" class="hash-link" aria-label="Direct link to Style" title="Direct link to Style">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L30"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>Style<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>Height<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
+<p>Height in pixels</p>
+</span></span></div><div><code>TextSize<!-- -->: </code><code class="blue_P4bS">number</code></div><div><code>IndentSize<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
+<p>Indent size in pixels</p>
+</span></span></div><div><code>Padding<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
+<p>Padding between elements in pixels</p>
+</span></span></div><div><code>BackgroundTransparency<!-- -->: </code><code class="blue_P4bS">number</code></div><div><code>TextTransparency<!-- -->: </code><code class="blue_P4bS">number</code></div><div><code>BackgroundColor3<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div><code>TextColor3<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div></div><code>}</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Element"><code style="text-decoration:none">Element</code><a href="#Element" class="hash-link" aria-label="Direct link to Element" title="Direct link to Element">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L57"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>Element<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>IndentationSize<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
+<p>Indentation side of this element in pixels</p>
+</span></span></div><div><code>Height<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
+<p>Height of this element in pixels</p>
+</span></span></div><div><code>Padding<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
+<p>The amount of padding this element should have after it in pixels</p>
+</span></span></div><div><code>TextSize<!-- -->: </code><code class="blue_P4bS">number</code></div><div><code>BackgroundTransparency<!-- -->: </code><code class="blue_P4bS">number</code></div><div><code>TextTransparency<!-- -->: </code><code class="blue_P4bS">number</code></div><div><code>Text<!-- -->: </code><code class="blue_P4bS">string</code></div><div><code>BackgroundColor3<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div><code>TextColor3<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div></div><code>}</code></div><div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="properties">Properties<a href="#properties" class="hash-link" aria-label="Direct link to Properties" title="Direct link to Properties">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="BackFrame"><code style="text-decoration:none">BackFrame</code><a href="#BackFrame" class="hash-link" aria-label="Direct link to BackFrame" title="Direct link to BackFrame">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L8"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->.<!-- -->BackFrame<!-- -->:<!-- --> </code> <code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/class/Frame" target="_blank" rel="noopener noreferrer">Frame<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+<p>Root frame which all layers are under, should be parented under a screen gui</p>
+</div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="new"><code style="text-decoration:none">new</code><a href="#new" class="hash-link" aria-label="Direct link to new" title="Direct link to new">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L644"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->.</code><code class="green_DgR4">new</code><code>(</code><code>UseInset<!-- -->: </code><code class="blue_P4bS">boolean?</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>When <code>UseInset</code> is true an offset on the BackFrame will be applied to avoid the top-bar in ScreenGui's that ignore the gui inset</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetLayer"><code style="text-decoration:none">GetLayer</code><a href="#GetLayer" class="hash-link" aria-label="Direct link to GetLayer" title="Direct link to GetLayer">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L274"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">GetLayer</code><code>(</code><div class="inset_uKQm"><div><code>Id<!-- -->: </code><code class="blue_P4bS">string</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>A unique id for this layer</p>
+</span></span></div><div><code>CreateAt<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/UDim2" target="_blank" rel="noopener noreferrer">UDim2<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><span class="inlineDescription_G7Er">-- <span>
+<p>If the layer doesn't already exist, when it is created it will be placed at this provided location</p>
+</span></span></div></div><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/CeiveImOverlay/api/CeiveImOverlay#Layer">Layer</a></code></div><div>
+<p>
+  It will first search all current layers for the <code>Id</code> provided,
+  if a layer is not found, one will be created
+</p>
+<p><strong>Layers persist between frames</strong></p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="SetActiveLayer"><code style="text-decoration:none">SetActiveLayer</code><a href="#SetActiveLayer" class="hash-link" aria-label="Direct link to SetActiveLayer" title="Direct link to SetActiveLayer">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L300"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">SetActiveLayer</code><code>(</code><code>Layer<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/CeiveImOverlay/api/CeiveImOverlay#Layer">Layer</a></code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Will set the current layer</p>
+<p>Setting a layer is not required to render, if one is not set, the default layer will be used</p>
+<p><strong>This does not act as a stack</strong></p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="PopActiveLayer"><code style="text-decoration:none">PopActiveLayer</code><a href="#PopActiveLayer" class="hash-link" aria-label="Direct link to PopActiveLayer" title="Direct link to PopActiveLayer">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L315"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">PopActiveLayer</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Resets the active layer back to the default one</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetActiveLayer"><code style="text-decoration:none">GetActiveLayer</code><a href="#GetActiveLayer" class="hash-link" aria-label="Direct link to GetActiveLayer" title="Direct link to GetActiveLayer">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L324"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">GetActiveLayer</code><code>(</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/CeiveImOverlay/api/CeiveImOverlay#Layer">Layer</a></code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="PushStyle"><code style="text-decoration:none">PushStyle</code><a href="#PushStyle" class="hash-link" aria-label="Direct link to PushStyle" title="Direct link to PushStyle">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L336"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">PushStyle</code><code>(</code><code>StyleDiff<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/CeiveImOverlay/api/CeiveImOverlay#StyleDiff">StyleDiff</a></code><code>) → </code><code>(</code><code>)</code></div><h3>Types</h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id="StyleDiff"><a href="#StyleDiff" class="hash-link" aria-label="Direct link to StyleDiff" title="Direct link to StyleDiff">​</a></h3><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>StyleDiff<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>Height<!-- -->: </code><code class="blue_P4bS">number?</code><span class="inlineDescription_G7Er">-- <span>
+<p>Height in pixels</p>
+</span></span></div><div><code>TextSize<!-- -->: </code><code class="blue_P4bS">number?</code></div><div><code>IndentSize<!-- -->: </code><code class="blue_P4bS">number?</code><span class="inlineDescription_G7Er">-- <span>
+<p>Indent size in pixels</p>
+</span></span></div><div><code>Padding<!-- -->: </code><code class="blue_P4bS">number?</code><span class="inlineDescription_G7Er">-- <span>
+<p>Padding between elements in pixels</p>
+</span></span></div><div><code>BackgroundTransparency<!-- -->: </code><code class="blue_P4bS">number?</code></div><div><code>TextTransparency<!-- -->: </code><code class="blue_P4bS">number?</code></div><div><code>BackgroundColor3<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3?<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div><code>TextColor3<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3?<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div></div><code>}</code></div><div></div><div>
+<p>
+  Will set the style for the default parameters.
+  This acts as a diff, so you only have to change what you want
+</p>
+<p>Avoids having to copy the same parameters across a bunch of calls</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="PopStyle"><code style="text-decoration:none">PopStyle</code><a href="#PopStyle" class="hash-link" aria-label="Direct link to PopStyle" title="Direct link to PopStyle">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L343"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">PopStyle</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetActiveStyle"><code style="text-decoration:none">GetActiveStyle</code><a href="#GetActiveStyle" class="hash-link" aria-label="Direct link to GetActiveStyle" title="Direct link to GetActiveStyle">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L352"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">GetActiveStyle</code><code>(</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/CeiveImOverlay/api/CeiveImOverlay#Style">Style</a></code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Begin"><code style="text-decoration:none">Begin</code><a href="#Begin" class="hash-link" aria-label="Direct link to Begin" title="Direct link to Begin">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L377"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">Begin</code><code>(</code><div class="inset_uKQm"><div><code>Text<!-- -->: </code><code class="blue_P4bS">string</code><code>,</code></div><div><code>BackgroundColor<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3?<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code></div><div><code>TextColor<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3?<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code></div><div><code>BackgroundTransparency<!-- -->: </code><code class="blue_P4bS">number?</code><code>,</code></div><div><code>TextTransparency<!-- -->: </code><code class="blue_P4bS">number?</code></div></div><code>) → </code><code>(</code><code>)</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Text"><code style="text-decoration:none">Text</code><a href="#Text" class="hash-link" aria-label="Direct link to Text" title="Direct link to Text">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L409"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">Text</code><code>(</code><div class="inset_uKQm"><div><code>Text<!-- -->: </code><code class="blue_P4bS">string</code><code>,</code></div><div><code>BackgroundColor<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3?<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code></div><div><code>TextColor<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3?<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code></div><div><code>BackgroundTransparency<!-- -->: </code><code class="blue_P4bS">number?</code><code>,</code></div><div><code>TextTransparency<!-- -->: </code><code class="blue_P4bS">number?</code></div></div><code>) → </code><code>(</code><code>)</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="End"><code style="text-decoration:none">End</code><a href="#End" class="hash-link" aria-label="Direct link to End" title="Direct link to End">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L471"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">End</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Render"><code style="text-decoration:none">Render</code><a href="#Render" class="hash-link" aria-label="Direct link to Render" title="Direct link to Render">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L488"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">Render</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Renders one frame</p>
+<p>
+  If you are having odd bugs do not call this in a <code>RenderStepped</code> loop,
+  it can cause very odd unexplainable behaviour
+</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="InitRendering"><code style="text-decoration:none">InitRendering</code><a href="#InitRendering" class="hash-link" aria-label="Direct link to InitRendering" title="Direct link to InitRendering">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/JakeyWasTaken/CeiveImOverlay/blob/master/src/CeiveImOverlay.luau#L503"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>CeiveImOverlay<!-- -->:</code><code class="green_DgR4">InitRendering</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Will connect to RenderStepped and render for you</p>
+<p>Calling <code>::Render</code> anytime after this will throw a soft assert</p>
+</div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
+    &quot;functions&quot;: [
+        {
+            &quot;name&quot;: &quot;GetLayer&quot;,
+            &quot;desc&quot;: &quot;It will first search all current layers for the `Id` provided,\nif a layer is not found, one will be created\n\n**Layers persist between frames**&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;Id&quot;,
+                    &quot;desc&quot;: &quot;A unique id for this layer&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;CreateAt&quot;,
+                    &quot;desc&quot;: &quot;If the layer doesn&#x27;t already exist, when it is created it will be placed at this provided location&quot;,
+                    &quot;lua_type&quot;: &quot;UDim2&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Layer\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 274,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;SetActiveLayer&quot;,
+            &quot;desc&quot;: &quot;Will set the current layer\n\nSetting a layer is not required to render, if one is not set, the default layer will be used\n\n**This does not act as a stack**&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;Layer&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Layer&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 300,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;PopActiveLayer&quot;,
+            &quot;desc&quot;: &quot;Resets the active layer back to the default one&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 315,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;GetActiveLayer&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Layer\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 324,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;PushStyle&quot;,
+            &quot;desc&quot;: &quot;Will set the style for the default parameters.\nThis acts as a diff, so you only have to change what you want\n\nAvoids having to copy the same parameters across a bunch of calls&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;StyleDiff&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;StyleDiff&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 336,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;PopStyle&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 343,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;GetActiveStyle&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Style\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 352,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Begin&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;Text&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;BackgroundColor&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Color3?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextColor&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Color3?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;BackgroundTransparency&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextTransparency&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;number?\r\n&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 377,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Text&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;Text&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;BackgroundColor&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Color3?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextColor&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Color3?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;BackgroundTransparency&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextTransparency&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;number?\r\n&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 409,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;End&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 471,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Render&quot;,
+            &quot;desc&quot;: &quot;Renders one frame\n\nIf you are having odd bugs do not call this in a `RenderStepped` loop,\nit can cause very odd unexplainable behaviour&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 488,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;InitRendering&quot;,
+            &quot;desc&quot;: &quot;Will connect to RenderStepped and render for you\n\nCalling `::Render` anytime after this will throw a soft assert&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 503,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;m_Render&quot;,
+            &quot;desc&quot;: &quot;**DO NOT USE**\n\nUse either `::Render` or `::InitRendering`&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;private&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 524,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;m_Pool&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;private&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 578,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;m_Cleanup&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;private&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 588,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;m_SoftAssert&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;Condition&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;any?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Issue&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;private&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 606,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;m_LogIssues&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;private&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 619,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;new&quot;,
+            &quot;desc&quot;: &quot;When `UseInset` is true an offset on the BackFrame will be applied to avoid the top-bar in ScreenGui&#x27;s that ignore the gui inset&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;UseInset&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;boolean?&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 644,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        }
+    ],
+    &quot;properties&quot;: [
+        {
+            &quot;name&quot;: &quot;BackFrame&quot;,
+            &quot;desc&quot;: &quot;Root frame which all layers are under, should be parented under a screen gui\r&quot;,
+            &quot;lua_type&quot;: &quot;Frame&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 8,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        }
+    ],
+    &quot;types&quot;: [
+        {
+            &quot;name&quot;: &quot;Layer&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;fields&quot;: [
+                {
+                    &quot;name&quot;: &quot;Id&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;,
+                    &quot;desc&quot;: &quot;The unique Id for this layer&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Position&quot;,
+                    &quot;lua_type&quot;: &quot;UDim2&quot;,
+                    &quot;desc&quot;: &quot;The position this layer will be drawn at, relative to the BackFrame&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;CurrentIndentation&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;A number tracking the current indentation level of this layer, reset after each render pass&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;RenderGroup&quot;,
+                    &quot;lua_type&quot;: &quot;{ Element }&quot;,
+                    &quot;desc&quot;: &quot;Array of elements which should be drawn in the render pass&quot;
+                }
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 17,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Style&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;fields&quot;: [
+                {
+                    &quot;name&quot;: &quot;Height&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;Height in pixels&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextSize&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;IndentSize&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;Indent size in pixels&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Padding&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;Padding between elements in pixels&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;BackgroundTransparency&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextTransparency&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;BackgroundColor3&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextColor3&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                }
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 30,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;StyleDiff&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;fields&quot;: [
+                {
+                    &quot;name&quot;: &quot;Height&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;,
+                    &quot;desc&quot;: &quot;Height in pixels&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextSize&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;IndentSize&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;,
+                    &quot;desc&quot;: &quot;Indent size in pixels&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Padding&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;,
+                    &quot;desc&quot;: &quot;Padding between elements in pixels&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;BackgroundTransparency&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextTransparency&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;BackgroundColor3&quot;,
+                    &quot;lua_type&quot;: &quot;Color3?&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextColor3&quot;,
+                    &quot;lua_type&quot;: &quot;Color3?&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                }
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 43,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Element&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;fields&quot;: [
+                {
+                    &quot;name&quot;: &quot;IndentationSize&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;Indentation side of this element in pixels&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Height&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;Height of this element in pixels&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Padding&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;The amount of padding this element should have after it in pixels&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextSize&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;BackgroundTransparency&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextTransparency&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Text&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;BackgroundColor3&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;TextColor3&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;,
+                    &quot;desc&quot;: &quot;&quot;
+                }
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 57,
+                &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+            }
+        }
+    ],
+    &quot;name&quot;: &quot;CeiveImOverlay&quot;,
+    &quot;desc&quot;: &quot;&quot;,
+    &quot;source&quot;: {
+        &quot;line&quot;: 4,
+        &quot;path&quot;: &quot;src/CeiveImOverlay.luau&quot;
+    }
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a><ul><li><a href="#Element" class="table-of-contents__link toc-highlight">Element</a></li><li><a href="#Layer" class="table-of-contents__link toc-highlight">Layer</a></li><li><a href="#Style" class="table-of-contents__link toc-highlight">Style</a></li><li><a href="#StyleDiff" class="table-of-contents__link toc-highlight">StyleDiff</a></li></ul></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a><ul><li><a href="#BackFrame" class="table-of-contents__link toc-highlight">BackFrame</a></li></ul></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#Begin" class="table-of-contents__link toc-highlight">:Begin</a></li><li><a href="#End" class="table-of-contents__link toc-highlight">:End</a></li><li><a href="#GetActiveLayer" class="table-of-contents__link toc-highlight">:GetActiveLayer</a></li><li><a href="#GetActiveStyle" class="table-of-contents__link toc-highlight">:GetActiveStyle</a></li><li><a href="#GetLayer" class="table-of-contents__link toc-highlight">:GetLayer</a></li><li><a href="#InitRendering" class="table-of-contents__link toc-highlight">:InitRendering</a></li><li><a href="#PopActiveLayer" class="table-of-contents__link toc-highlight">:PopActiveLayer</a></li><li><a href="#PopStyle" class="table-of-contents__link toc-highlight">:PopStyle</a></li><li><a href="#PushStyle" class="table-of-contents__link toc-highlight">:PushStyle</a></li><li><a href="#Render" class="table-of-contents__link toc-highlight">:Render</a></li><li><a href="#SetActiveLayer" class="table-of-contents__link toc-highlight">:SetActiveLayer</a></li><li><a href="#Text" class="table-of-contents__link toc-highlight">:Text</a></li><li><a href="#new" class="table-of-contents__link toc-highlight">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 JakeyWasTaken. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
